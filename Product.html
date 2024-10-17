@@ -876,7 +876,7 @@
 
     /*-----Contact Section-----*/
 
-        .contact-section {
+    .contact-section {
             position: relative;
             padding: 50px 0;
             width: 100%;
@@ -972,7 +972,7 @@
             flex-direction: column;
             align-items: center;
             backdrop-filter: blur(5px);
-
+            color: white;
             opacity: 0;
             transform: translateY(50px);
             transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
@@ -1032,6 +1032,22 @@
 
     .contact-section.animate .contact-box:nth-child(3) {
         transition-delay: 0.4s;
+    }
+
+    .contact-box a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+        /* Khusus untuk nomor telepon */
+    .contact-box a[href^="tel:"] {
+        color: white; 
+        text-decoration: none;
+    }
+
+    a[href^="tel:"] {
+        color: inherit;
+        text-decoration: none;
     }
 
         @media (max-width: 1366px) {
@@ -1358,8 +1374,8 @@
                 <div class="contact-box">
                     <div class="contact-icon">📞</div>
                     <h3 class="contact-category">Telephone</h3>
-                    <p class="contact-info">+62 (823) 1199-0711</p>
-                </div>
+                    <a href="tel:+6282311990711">+62 (823) 1199-0711</a>
+                  </div>
                 <div class="contact-box">
                     <div class="contact-icon">🏢</div>
                     <h3 class="contact-category">Address</h3>

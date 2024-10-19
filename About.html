@@ -449,6 +449,8 @@
 
  /*-------About Section-------*/
 
+ /*-------About Section-------*/
+
  .about-us {
     background-image: url('img/Home/BG About Astroxus.png');
     background-size: contain;
@@ -588,9 +590,22 @@
     }
 }
 
+@media (max-width: 1536px) {
+    #aboutTitle {
+        font-size: 2.8rem;
+        margin-top: -20rem;
+    }
+    #aboutDescription {
+        font-size: 1.8rem;
+        margin-top: 20px;
+    }
+}
+
 @media (max-width: 768px) {
     .about-us {
         background-image: url('img/Home/Mobile-About-Background.png');
+        background-size: contain;
+        background-color: #343742;
         padding-top: 5%;
     }
     #aboutTitle {        
@@ -607,6 +622,8 @@
 @media (max-width: 580px) {
     .about-us {
         background-image: url('img/Home/Mobile-About-Background.png');
+        background-size: contain;
+        background-color: #343742;
         padding-top: 5%;
     }
     #aboutTitle {
@@ -620,7 +637,17 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 395px) {
+    #aboutTitle {
+        font-size: 1.2rem;
+        margin-top: -18rem;
+    }
+    #aboutDescription {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 360px) {
     #aboutTitle {
         font-size: 1.2rem;
         margin-top: -18rem;
@@ -653,6 +680,8 @@
     }
 }
 
+
+    /*-----Contact Section-----*/
 
     /*-----Contact Section-----*/
 
@@ -942,7 +971,6 @@
             width: 60px;
         }
     }
-
 
     /*------Our Teams------*/
     .our-team {
